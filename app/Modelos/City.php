@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Modelos;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -10,6 +10,6 @@ class City extends Model
    protected $fillable = ["id_cities","name"];
 
     public function users(){
-        return $this->hasMany('App\User.php', "id_users");
+        return $this->hasMany('App\Modelos\User.php', "id_users");
     }
 }

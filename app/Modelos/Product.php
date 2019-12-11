@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Modelos;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -10,6 +10,6 @@ class Product extends Model
     protected $fillable = ["id_products", "quantity","price"];
 
     public function bills_products(){
-        return $this-> belongsTo('App\BillProduct.php',"id_products");
+        return $this-> belongsTo('App\Modelos\BillProduct.php',"id_products");
     }
 }
