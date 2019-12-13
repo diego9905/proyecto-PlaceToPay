@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="978a5a79-3044-4627-83e5-b9310213c0e4" name="Default Changelist" comment="" />
+    <list default="true" id="978a5a79-3044-4627-83e5-b9310213c0e4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modelos/Bill.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modelos/BillProduct.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modelos/City.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modelos/Client.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modelos/Country.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modelos/Product.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modelos/Seller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +126,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -122,15 +135,15 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app" />
-      <recent name="$PROJECT_DIR$/app/Modelos" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/database" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/app/modelos" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/app" />
+      <recent name="$PROJECT_DIR$/app/Modelos" />
+      <recent name="$PROJECT_DIR$/database" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -167,6 +180,7 @@
       <workItem from="1576025148702" duration="3156000" />
       <workItem from="1576029316810" duration="7701000" />
       <workItem from="1576115870020" duration="4912000" />
+      <workItem from="1576122470683" duration="22206000" />
     </task>
     <servers />
   </component>
