@@ -15,7 +15,9 @@ class CreateBillsTable extends Migration
     {
         Schema::create('bills', function (Blueprint $table) {
             $table->increments('id_bills');
-            $table->timestamp('date');
+            $table->timestamp('generated_bill')->nullable();
+            $table->timestamp('delivered_bill')->nullable();
+            $table->timestamp('overdue_bill')->nullable();
             $table->string('state');
             $table->string('detail');
             $table->integer('iva');
