@@ -35,23 +35,21 @@ class clientsController extends Controller
     {
         //$datosclients = request()->all();
 
-
-
-
-
-
         $datosclients=request()->except('_token');
 
         Client::insert($datosclients);
 
+        //return response()->json($datosclients);
+        return redirect('clients')->with('Message','customer added successfully');
 
-        return response()->json($datosclients);
     }
+
 
     public function destroy($id)
     {
+        $client= Client::findOrFail($id);
         Client::destroy($id);
-        return redirect('clients');
+        return redirect('clients')->with('Message','Customer removed');
     }
     public function edit($id)
     {
@@ -63,8 +61,11 @@ class clientsController extends Controller
         $datosclients=request()->except(['_token', '_method']);
         Client::where('id_clients','=',$id)->update($datosclients);
 
-        $client= Client::findOrFail($id);
-        return view('clients.edit', compact('client'));
+        //$client= Client::findOrFail($id);
+        //return view('clients.edit', compact('client'));
+
+        return redirect('clients')->with('Message','Customer successfully modified');
+
     }
 } //
 
