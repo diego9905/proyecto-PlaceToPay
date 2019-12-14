@@ -6,19 +6,18 @@ use Illuminate\Database\Eloquent\Model;
 
 class Client extends Model
 {
+    protected $primaryKey="id_clients";
     protected $table ="clients";
-    protected $fillable =["id_clients","name","email","address","phone","identification_card"];
+    protected $fillable =["id_clients","name","last_name","email","address","phone","city","identification_card"];
 
     public function bills(){
         return $this-> belongsTo('App\Modelos\Bill.php',"id_clients");
     }
 
-    public function countries(){
-        return $this-> belongsTo('App\Modelos\Country.php',"id_clients");
+    public function cities(){
+        return $this->hasMany('App\Modelos\City', "id_cities");
     }
 
-    public function cities(){
-        return $this-> belongsTo('App\Modelos\City.php',"id_clients");
-    }
+
     //
 }

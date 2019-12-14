@@ -16,8 +16,6 @@ class CreateCountriesTable extends Migration
         Schema::create('countries', function (Blueprint $table) {
             $table->increments('id_countries');
             $table->string('name');
-            $table->integer('id_clients')->unsigned();
-            $table->foreign('id_clients')->references('id_clients')->on('clients');
             $table->timestamps();
         });
     }

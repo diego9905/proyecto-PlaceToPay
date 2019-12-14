@@ -12,6 +12,8 @@ class Country extends Model
     public function clients(){
         return $this->hasMany('App\Modelos\Client.php', "id_clients");
     }
-
+    public function cities(){
+        return $this-> belongsTo('App\Modelos\City.php',"id_countries");
+    }
     //
 }
