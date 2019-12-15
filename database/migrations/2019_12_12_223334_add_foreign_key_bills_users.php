@@ -16,9 +16,11 @@ class AddForeignKeyBillsUsers extends Migration
 
         Schema::table('bills', function (Blueprint $table) {
 
-            $table->integer('id')->unsigned();
+            $table->integer('id_users')->unsigned()->nullable();
 
-            $table->foreign('id')->references('id')->on('users');
+
+            $table->foreign('id_users')->references('id')->on('users');
+
             //
         });
 
@@ -32,7 +34,7 @@ class AddForeignKeyBillsUsers extends Migration
     public function down()
     {
 
-        Schema::table('bills', function (Blueprint $table) {
+        Schema::table('billsController', function (Blueprint $table) {
 
 
             $table -> dropForeign(['id']);

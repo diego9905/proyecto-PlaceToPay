@@ -47,6 +47,21 @@ Route::resource('clients/', 'clientsController');
 
 Auth::routes();
 
+//Route::get('/bills', 'billsController@index');
+
+//Auth::routes();
+
+//Route::get('/bills/create', 'billsController@create');
+
+//Auth::routes();
+
+Route::resource('bills', 'billsController');
+
+Auth::routes();
+
+
+
+
 
 
 

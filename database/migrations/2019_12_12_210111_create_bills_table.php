@@ -23,9 +23,11 @@ class CreateBillsTable extends Migration
             $table->integer('iva');
             $table->integer('subtotal');
             $table->integer('total');
-            $table->integer('id_clients')->unsigned();
+            $table->integer('id_clients')->unsigned()->nullable();
+            $table->integer('id_states')->unsigned()->nullable();
 
             $table->foreign('id_clients')->references('id_clients')->on('clients');
+            $table->foreign('id_states')->references('id_states')->on('states');
 
 
             $table->timestamps();
@@ -45,6 +47,6 @@ class CreateBillsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('bills');
+        Schema::dropIfExists('billsController');
     }
 }
