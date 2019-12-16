@@ -17,6 +17,13 @@ class StateSeeder extends Seeder
      */
     public function run()
     {
+          DB::table('states')->insert([
+
+            'name'=> '-- --',
+
+            ]);
+
+
            DB::table('states')->insert([
 
                'name'=> 'Paid',
