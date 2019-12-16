@@ -26,9 +26,10 @@
 
     <label for="state" class="control-label"> {{'State'}}</label>
     <select name="state" id="state" class="form-control" required="required">
-        <option value=""></option>
+        @foreach($states as $state)
+            <option value="{{  $state['name'] }}">{{ $state['name'] }}</option>
+        @endforeach
     </select>
-
 
 </div>
 

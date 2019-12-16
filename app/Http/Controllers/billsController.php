@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Bill;
+use App\State;
 use Illuminate\Http\Request;
+
 
 class billsController extends Controller
 {
@@ -34,8 +36,9 @@ class billsController extends Controller
 
     public function edit($id)
     {
+        $states = State::all();
         $bill=Bill::findOrFail($id);
-        return view('bills.edit', compact('bill'));
+        return view('bills.edit', compact('bill'), compact('states'));
     }
 
     public function update(request $request, $id)
@@ -50,7 +53,7 @@ class billsController extends Controller
 
     public function create()
     {
-
-        return view('bills.create');
+        $states = State::all();
+        return view('bills.create', compact('states'));
     }
 }

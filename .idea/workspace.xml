@@ -3,11 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="978a5a79-3044-4627-83e5-b9310213c0e4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/billsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/billsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Modelos/Bill.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modelos/Bill.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_12_210111_create_bills_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_12_210111_create_bills_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_12_223334_add_foreign_key_bills_users.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_12_223334_add_foreign_key_bills_users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/bills/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bills/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/bills/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bills/form.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -147,16 +148,16 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/Modelos" />
-      <recent name="$PROJECT_DIR$/app" />
-      <recent name="$PROJECT_DIR$/app/modelos" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/Modelos" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/database" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Modelos" />
+      <recent name="$PROJECT_DIR$/app" />
+      <recent name="$PROJECT_DIR$/app/modelos" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -195,7 +196,9 @@
       <workItem from="1576115870020" duration="4912000" />
       <workItem from="1576122470683" duration="30258000" />
       <workItem from="1576250043123" duration="24158000" />
-      <workItem from="1576293325798" duration="41913000" />
+      <workItem from="1576293325798" duration="43134000" />
+      <workItem from="1576460072135" duration="1257000" />
+      <workItem from="1576465984940" duration="8835000" />
     </task>
     <servers />
   </component>

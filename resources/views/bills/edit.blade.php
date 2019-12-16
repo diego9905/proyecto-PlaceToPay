@@ -30,8 +30,12 @@
 
             <div class="form-group">
 
-                <label for="state" class="control-label">{{'State'}}</label>
-                <input type="text" class="form-control"  name="state"  id="state" value="{{ $bill->state }}">
+                <label for="state" class="control-label"> {{'State'}}</label>
+                <select name="state" id="state" class="form-control" required="required">
+                    @foreach($states as $state)
+                        <option value="{{  $state['name'] }}">{{ $state['name'] }}</option>
+                    @endforeach
+                </select>
 
             </div>
 

@@ -20,5 +20,8 @@ class Bill extends Model
     public function bills_products(){
         return $this-> belongsTo('App\Modelos\BillProduct.php',"id_bills");
     }
+    public function states(){
+        return $this->hasMany('App\Modelos\State.php.php', "id_states");
+    }
     //
 }
