@@ -34,7 +34,7 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('index') }}">{{ __('Clients') }}</a>
+                            <a class="nav-link" href="{{ route('clients.index') }}">{{ __('Clients') }}</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('bills.index') }}">{{ __('Bills') }}</a>

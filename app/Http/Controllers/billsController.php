@@ -17,7 +17,22 @@ class billsController extends Controller
     }
     public function store(Request $request)
     {
+        $validaData = $request->validate([
+            'generated_bill' => 'required'
 
+        ]);
+        $validaData = $request->validate([
+            'iva' => 'required'
+
+        ]);
+        $validaData = $request->validate([
+            'subtotal' => 'required'
+
+        ]);
+        $validaData = $request->validate([
+            'total' => 'required'
+
+        ]);
 
         $datosbills=request()->except('_token');
 
@@ -43,6 +58,22 @@ class billsController extends Controller
 
     public function update(request $request, $id)
     {
+        $validaData = $request->validate([
+            'generated_bill' => 'required'
+
+        ]);
+        $validaData = $request->validate([
+            'iva' => 'required'
+
+        ]);
+        $validaData = $request->validate([
+            'subtotal' => 'required'
+
+        ]);
+        $validaData = $request->validate([
+            'total' => 'required'
+
+        ]);
         $datosbills=request()->except(['_token', '_method']);
         Bill::where('id_bills','=',$id)->update($datosbills);
 

@@ -13,11 +13,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
-//Route::get('/clients', 'clientsController@index');
-//Route::get('/clients/create', 'clientsController@create');
-route::resource('clients', 'clientsController');
 
 Auth::routes();
+
+//Route::get('/clients', 'clientsController@index');
+//Route::get('/clients/create', 'clientsController@create');
+
 
 Route::get('/home', 'HomeController@index')->name('home');
 
@@ -43,7 +44,7 @@ Route::delete('clients/', 'clientsController@destroy')->name('clients');
 
 Auth::routes();
 
-Route::resource('clients/', 'clientsController');
+Route::resource('clients', 'clientsController');
 
 Auth::routes();
 
@@ -58,6 +59,8 @@ Auth::routes();
 Route::resource('bills', 'billsController');
 
 Auth::routes();
+
+
 
 
 

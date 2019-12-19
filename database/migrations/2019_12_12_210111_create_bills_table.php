@@ -15,18 +15,18 @@ class CreateBillsTable extends Migration
     {
         Schema::create('bills', function (Blueprint $table) {
             $table->increments('id_bills');
-            $table->date('generated_bill')->nullable();
+            $table->date('generated_bill');
             $table->date('delivered_bill')->nullable();
             $table->date('overdue_bill')->nullable();
             $table->string('state');
-            $table->string('detail');
+            $table->string('detail')->nullable();
             $table->integer('iva');
             $table->integer('subtotal');
             $table->integer('total');
             $table->integer('id_clients')->unsigned()->nullable();
             $table->integer('id_states')->unsigned()->nullable();
 
-            $table->foreign('id_clients')->references('id_clients')->on('clients');
+            $table->foreign('id_clients')->references('id_clients')->on('client');
             $table->foreign('id_states')->references('id_states')->on('states');
 
 
