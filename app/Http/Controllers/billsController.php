@@ -9,6 +9,10 @@ use Illuminate\Http\Request;
 
 class billsController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function index()
     {
         $datos['bills']=Bill::paginate(5);

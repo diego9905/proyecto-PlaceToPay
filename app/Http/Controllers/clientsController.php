@@ -25,6 +25,10 @@ class clientsController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function index()
     {
         $datos['clients']=Client::paginate(5);

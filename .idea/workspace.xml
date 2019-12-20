@@ -5,18 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/billsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/billsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/clientsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/clientsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_12_205757_create_clients_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_12_205757_create_clients_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_12_210111_create_bills_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_12_210111_create_bills_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/bills/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bills/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/bills/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bills/form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/clients/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/clients/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/clients/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/clients/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/clients/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/clients/form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/channels.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/channels.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -207,7 +195,8 @@
       <workItem from="1576293325798" duration="43134000" />
       <workItem from="1576460072135" duration="1257000" />
       <workItem from="1576465984940" duration="15065000" />
-      <workItem from="1576708767111" duration="18449000" />
+      <workItem from="1576708767111" duration="19382000" />
+      <workItem from="1576864496670" duration="642000" />
     </task>
     <servers />
   </component>
