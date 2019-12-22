@@ -4,14 +4,11 @@
 
     <br class="container">
 
-        @if(Session::has('Message'))
-            <div class="alert alert-success" role="alert">
+    @if(Session::has('Message'))
+        <div class="alert alert-success" role="alert">
             {{Session::get('Message')}}
-            </div>
-        @endif
-
-
-
+        </div>
+    @endif
 
     <a href="{{ url('bills/create') }}" class="btn btn-success">Add bill</a>
 
@@ -51,7 +48,8 @@
                     <form method="post" action="{{ url('/bills/'.$bill->id_bills) }}" style="display:inline">
                         {{csrf_field() }}
                         {{method_field('DELETE')}}
-                        <button class="btn btn-danger" type="submit" onclick="return confirm('delete?');" >delete</button>
+                        <button class="btn btn-danger" type="submit" onclick="return confirm('delete?');">delete
+                        </button>
                     </form>
                 </td>
             </tr>

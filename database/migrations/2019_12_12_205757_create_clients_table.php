@@ -13,19 +13,22 @@ class CreateClientsTable extends Migration
      */
     public function up()
     {
-        Schema::create('clients', function (Blueprint $table) {
-            $table->increments('id_clients');
-            $table->string('name');
-            $table->string('last_name');
-            $table->string('email')->nullable();
-            $table->string('address');
-            $table->integer('phone');
-            $table->string('city');
-            $table->string('identification_card');
-            $table->integer('id_cities')->unsigned()->nullable();
-            $table->foreign('id_cities')->references('id_cities')->on('cities');
-            $table->timestamps();
-        });
+        Schema::create(
+            'clients',
+            function (Blueprint $table) {
+                $table->increments('id_clients');
+                $table->string('name');
+                $table->string('last_name');
+                $table->string('email')->nullable();
+                $table->string('address');
+                $table->integer('phone');
+                $table->string('city');
+                $table->string('identification_card');
+                $table->integer('id_cities')->unsigned()->nullable();
+                $table->foreign('id_cities')->references('id_cities')->on('cities');
+                $table->timestamps();
+            }
+        );
     }
 
     /**

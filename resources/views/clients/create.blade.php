@@ -2,24 +2,24 @@
 
 @section('content')
 
-<div class="container">
-    @if($errors->any())
-        <div class="alert  alert-danger">
-            <ul>
-                @foreach($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                @endforeach
-            </ul>
-        </div>
-    @endif
+    <div class="container">
+        @if($errors->any())
+            <div class="alert  alert-danger">
+                <ul>
+                    @foreach($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
 
 
-<form action="{{('/clients')}}" class="form-horizontal" method="post" enctype="multipart/form-data">
-    {{csrf_field()}}
+        <form action="{{('/clients')}}" class="form-horizontal" method="post" enctype="multipart/form-data">
+            {{csrf_field()}}
 
-    @include('clients.form',['Modo'=>'crear'])
+            @include('clients.form',['Modo'=>'crear'])
 
 
-</form>
-</div>
+        </form>
+    </div>
 @endsection
