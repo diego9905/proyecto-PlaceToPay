@@ -2,39 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="978a5a79-3044-4627-83e5-b9310213c0e4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/PlaceToPay.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PlaceToPay.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/billsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/billsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/clientsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/clientsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Modelos/Bill.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modelos/Bill.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modelos/BillProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modelos/BillProduct.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modelos/City.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modelos/City.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Modelos/Client.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modelos/Client.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modelos/Country.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modelos/Country.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modelos/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modelos/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modelos/State.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modelos/State.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_12_15_000052_create_states_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_12_15_000052_create_states_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_12_205755_create_countries_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_12_205755_create_countries_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_12_205756_create_cities_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_12_205756_create_cities_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_12_205757_create_clients_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_12_205757_create_clients_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_12_210111_create_bills_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_12_210111_create_bills_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_12_212030_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_12_212030_create_products_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_12_212040_create_bills_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_12_212040_create_bills_products_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_12_223334_add_foreign_key_bills_users.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_12_223334_add_foreign_key_bills_users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/bills/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bills/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/bills/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bills/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/bills/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bills/form.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/bills/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bills/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/clients/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/clients/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/clients/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/clients/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/clients/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/clients/form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/clients/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/clients/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +143,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../correcciones laravel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/bills" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -175,19 +151,20 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.PHP" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/Modelos" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/app" />
-      <recent name="$PROJECT_DIR$/database" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/Modelos" />
       <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/app/modelos" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/bills" />
+      <recent name="$PROJECT_DIR$/app/Modelos" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/app" />
+      <recent name="$PROJECT_DIR$/database" />
     </key>
   </component>
   <component name="RunManager">
@@ -246,7 +223,10 @@
       <workItem from="1577030552772" duration="7000" />
       <workItem from="1577030584365" duration="34000" />
       <workItem from="1577031136428" duration="5000" />
-      <workItem from="1577031337717" duration="1378000" />
+      <workItem from="1577031337717" duration="13100000" />
+      <workItem from="1577063552031" duration="216000" />
+      <workItem from="1577068610384" duration="5000" />
+      <workItem from="1577068691408" duration="5123000" />
     </task>
     <servers />
   </component>
@@ -267,17 +247,17 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="205" y="33" key="SettingsEditor" timestamp="1577030518502">
+    <state x="205" y="33" key="SettingsEditor" timestamp="1577068551552">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="205" y="33" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1577030518502" />
-    <state x="372" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1577033036587">
+    <state x="205" y="33" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1577068551552" />
+    <state x="372" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1577068695885">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="372" y="225" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1577033036587" />
-    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1577033084482">
+    <state x="372" y="225" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1577068695885" />
+    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1577070341834">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1577033084482" />
+    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1577070341834" />
   </component>
 </project>

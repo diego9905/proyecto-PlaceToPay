@@ -11,9 +11,14 @@ class Bill extends Model
 
     protected $fillable = [
         "id_bills",
+        "customer_name",
+        "customer_identification_card",
         "generated_bill",
         "delivered_bill",
         "overdue_bill",
+        "company_name",
+        "seller_name",
+        "seller_nit",
         "state",
         "detail",
         "total",
@@ -40,5 +45,6 @@ class Bill extends Model
     {
         return $this->hasMany('App\Modelos\State.php.php', "id_states");
     }
+
     //
 }

@@ -9,6 +9,17 @@
 
             <div class="form-group">
 
+                <label for="customer_name" class="control-label">{{'Customer Name'}}</label>
+                <select name="customer_name" id="customer_name" class="form-control" required="required">
+                    @foreach($clients as $client)
+                        <option value="{{  $client['name'] ." " . $client['last_name'] }}">{{ $client['name'] ." ". $client['last_name'] }}</option>
+                    @endforeach
+                </select>
+
+            </div>
+
+            <div class="form-group">
+
                 <label for="generated_bill" class="control-label">{{'Generated Bill'}}</label>
                 <input type="date" class="form-control" name="generated_bill" id="generated_bill"
                        value="{{ $bill->generated_bill }}">
@@ -28,6 +39,22 @@
                 <label for="overdue_bill" class="control-label">{{'Overdue Bill'}}</label>
                 <input type="date" class="form-control" name="overdue_bill" id="overdue_bill"
                        value="{{ $bill->overdue_bill }}">
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="company_name" class="control-label">{{'Company Name'}}</label>
+                <input type="text" class="form-control" name="company_name" id="company_name"
+                       value="{{ $bill->company_name }}">
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="seller_name" class="control-label">{{'Seller Name'}}</label>
+                <input type="text" class="form-control" name="seller_name" id="seller_name"
+                       value="{{ $bill->seller_name }}">
 
             </div>
 

@@ -17,9 +17,14 @@ class CreateBillsTable extends Migration
             'bills',
             function (Blueprint $table) {
                 $table->increments('id_bills');
+                $table->string('customer_name');
+                $table->string('customer_identification_card');
                 $table->date('generated_bill');
                 $table->date('delivered_bill')->nullable();
                 $table->date('overdue_bill')->nullable();
+                $table->string('company_name');
+                $table->string('seller_name');
+                $table->string('seller_nit');
                 $table->string('state');
                 $table->string('detail')->nullable();
                 $table->integer('iva');
@@ -28,12 +33,12 @@ class CreateBillsTable extends Migration
                 $table->integer('id_clients')->unsigned()->nullable();
                 $table->integer('id_states')->unsigned()->nullable();
 
-                $table->foreign('id_clients')->references('id_clients')->on('client');
+                $table->foreign('id_clients')->references('id_clients')->on('clients');
                 $table->foreign('id_states')->references('id_states')->on('states');
 
 
                 $table->timestamps();
-                //       $table->foreign('id_users')->references('id_users')->on('users');
+
 
             }
         );

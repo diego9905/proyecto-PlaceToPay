@@ -29,6 +29,4 @@ class Client extends Model
         return $this->hasMany('App\Modelos\City', "id_cities");
     }
 
-
-    //
 }

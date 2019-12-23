@@ -17,14 +17,11 @@
 
         <thead class=thead class="thead-light">
         <tr>
-            <th>#</th>
+            <th>Bill Number</th>
+            <th>Customer Name</th>
             <th>Generated Bill</th>
-            <th>Delivered Bill</th>
             <th>Overdue Bill</th>
             <th>State</th>
-            <th>Detail</th>
-            <th>Iva</th>
-            <th>Subtotal</th>
             <th>Total</th>
             <th>Actions</th>
         </tr>
@@ -33,15 +30,17 @@
         @foreach($bills as $bill)
             <tr>
                 <td>{{$loop->iteration}}</td>
+                <td>
+                    <a href="{{url('bills/show/' . $bill->id_bills)}}">
+                        {{$bill->customer_name}}
+                    </a>
+                </td>
                 <td>{{$bill->generated_bill}}</td>
-                <td>{{$bill->delivered_bill}}</td>
                 <td>{{$bill->overdue_bill}}</td>
                 <td>{{$bill->state}}</td>
-                <td>{{$bill->detail}}</td>
-                <td>{{$bill->iva}}</td>
-                <td>{{$bill->subtotal}}</td>
                 <td>{{$bill->total}}</td>
                 <td>
+
 
                     <a class="btn btn-warning" href="{{ url('/bills/'.$bill->id_bills.'/edit') }}">Edit</a>
 
@@ -56,5 +55,5 @@
         @endforeach
         </tbody>
     </table>
-    </br>
+
 @endsection
