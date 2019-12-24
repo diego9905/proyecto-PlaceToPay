@@ -5,11 +5,15 @@ namespace App\Http\Controllers;
 use App\Bill;
 use App\Client;
 use App\State;
+use App\User;
 use Illuminate\Http\Request;
 
 
 class billsController extends Controller
 {
+
+
+
     public function __construct()
     {
         $this->middleware('auth');
@@ -106,9 +110,10 @@ class billsController extends Controller
 
     public function create()
     {
+        $users = User::all();
         $clients = Client::all();
         $states = State::all();
-        return view('bills.create', compact('states'), compact('clients'));
+        return view('bills.create', compact('states', 'users'), compact('clients'));
     }
 
     public function show($id)
@@ -116,4 +121,7 @@ class billsController extends Controller
         $bill = Bill::findOrFail($id);
         return view('bills.show', compact('bill'));
     }
+
+
+
 }

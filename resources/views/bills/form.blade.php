@@ -6,10 +6,10 @@
     <select name="customer_name" id="customer_name" class="form-control" required="required">
         @foreach($clients as $client)
             <option value="{{  $client['name'] ." " . $client['last_name'] }}">{{ $client['name'] ." ". $client['last_name'] }}</option>
+            <option value="{{ $client['customer_identification_card'] }}">{{ $client['customer_identification_card'] }}"</option>
         @endforeach
     </select>
 
-</div>
 
 <div class="form-group">
 
@@ -48,7 +48,6 @@
     <input type="text" class="form-control" name="seller_name" id="seller_name"
            value="{{ old('seller_name' )}}">
 
-</div>
 
 <div class="form-group">
 

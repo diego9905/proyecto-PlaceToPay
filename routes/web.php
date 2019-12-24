@@ -24,22 +24,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
 Route::delete('clients/', 'clientsController@destroy')->name('clients');
 
 Auth::routes();
@@ -55,6 +39,16 @@ Auth::routes();
 Route::get('bills/show/{id}', 'billsController@show')->name('bills');
 
 Auth::routes();
+
+Route::resource('users', 'usersController');
+
+Auth::routes();
+
+Route::resource('products', 'productsController');
+
+Auth::routes();
+
+
 
 
 

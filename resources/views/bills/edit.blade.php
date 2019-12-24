@@ -18,6 +18,12 @@
 
             </div>
 
+            <label for="customer_identification_card" class="control-label">{{'Customer ID:'}}</label>
+            <div class="col-xs-2">
+                <input class="form-control" type="text" readonly
+                       value={{ $bill->customer_identification_card }} />
+            </div>
+
             <div class="form-group">
 
                 <label for="generated_bill" class="control-label">{{'Generated Bill'}}</label>

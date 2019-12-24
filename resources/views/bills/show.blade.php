@@ -6,11 +6,12 @@
             <div class="col-md-12">
                 <h2 class="page-header">
                     SALE BILL # {{ str_pad ($bill->id_bills, 4, '0', STR_PAD_LEFT) }}
+
                 </h2>
 
                 <div class="well well-sm">
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-3">
                             <label for="customer name" class="control-label">{{'Customer Name:'}}</label>
 
                             <div class="col-xs-6">
@@ -23,7 +24,7 @@
                                 <input class="form-control" type="text" readonly value={{ $bill->seller_name }} />
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-3">
                             <label for="customer_identification_card" class="control-label">{{'Customer ID:'}}</label>
                             <div class="col-xs-2">
                                 <input class="form-control" type="text" readonly
@@ -33,6 +34,33 @@
                             <label for="seller_nit" class="control-label">{{'Seller Nit:'}}</label>
                             <div class="col-xs-4">
                                 <input class="form-control" type="text" readonly value={{ $bill->seller_nit }} />
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <label for="customer name" class="control-label">{{'Generated Bill:'}}</label>
+
+                            <div class="col-xs-6">
+                                <input class="form-control typeahead" type="text" readonly
+                                       value="{{ $bill->generated_bill }}"/>
+                            </div>
+
+                            <label for="seller_name" class="control-label">{{'Delivered Bill:'}}</label>
+                            <div class="col-xs-2">
+                                <input class="form-control" type="text" readonly value={{ $bill->delivered_bill }} />
+                            </div>
+                        </div>
+
+                        <div class="col-3">
+                            <label for="customer name" class="control-label">{{'Overdue Bill:'}}</label>
+
+                            <div class="col-xs-6">
+                                <input class="form-control typeahead" type="text" readonly
+                                       value="{{ $bill->overdue_bill }}"/>
+                            </div>
+
+                            <label for="seller_name" class="control-label">{{'State:'}}</label>
+                            <div class="col-xs-2">
+                                <input class="form-control" type="text" readonly value={{ $bill->state }} />
                             </div>
                         </div>
                     </div>

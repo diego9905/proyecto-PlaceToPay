@@ -25,6 +25,10 @@ class User extends Authenticatable
         'phone',
         'city',
     ];
+    public function administrators()
+    {
+        return $this->hasMany('App\Modelos\Administrator', "id_administrators");
+    }
 
     /**
      * The attributes that should be hidden for arrays.
