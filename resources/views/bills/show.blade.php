@@ -13,22 +13,22 @@
                     <div class="row">
                         <div class="col-3">
                             <label for="customer name" class="control-label">{{'Customer Name:'}}</label>
-
                             <div class="col-xs-6">
                                 <input class="form-control typeahead" type="text" readonly
-                                       value="{{ $bill->customer_name }}"/>
+
+                                       value="{{ $client->name." ".$client->last_name}}"/>
                             </div>
 
                             <label for="seller_name" class="control-label">{{'Seller Name:'}}</label>
                             <div class="col-xs-2">
-                                <input class="form-control" type="text" readonly value={{ $bill->seller_name }} />
+                                <input class="form-control" type="text" readonly value={{ $user->name }} />
                             </div>
                         </div>
                         <div class="col-3">
                             <label for="customer_identification_card" class="control-label">{{'Customer ID:'}}</label>
                             <div class="col-xs-2">
                                 <input class="form-control" type="text" readonly
-                                       value={{ $bill->customer_identification_card }} />
+                                       value={{ $client->identification_card }} />
                             </div>
 
                             <label for="seller_nit" class="control-label">{{'Seller Nit:'}}</label>
@@ -71,23 +71,36 @@
                 <table class="table table-striped">
                     <thead>
                     <tr>
-                        <th>Producto</th>
-                        <th style="width:100px;">Cantidad</th>
-                        <th style="width:100px;">P.U</th>
-                        <th style="width:100px;">Total</th>
+                        <th>Product</th>
+
+                        <th>Description</th>
+                        <th style="width:100px;">Quantity</th>
+                        <th style="width:100px;">Price</th>
+
                     </tr>
                     </thead>
                     <tbody>
+                    @foreach($products as $product)
+                        <tr>
+                            <td>{{$loop->iteration}}</td>
+
+                            <td class="text-body">{{$product->description}}</td>
+                            <td class="text-body">{{$product->quantity}}</td>
+                            <td class="text-body">$ {{number_format($product->price, 2)}}</td>
+                        </tr>
+                    @endforeach
+
 
                     </tbody>
                     <tfoot>
+
                     <tr>
                         <td colspan="3" class="text-right"><b>IVA</b></td>
                         <td class="text-right">$ {{ number_format($bill->iva, 2) }}</td>
                     </tr>
                     <tr>
-                        <td colspan="3" class="text-right"><b>Sub Total</b></td>
-                        <td class="text-right">$ {{ number_format($bill->subTotal, 2) }}</td>
+                        <td colspan="3" class="text-right"><b>SubTotal</b></td>
+                        <td class="text-right">$ {{ number_format($bill->subtotal, 2) }}</td>
                     </tr>
                     <tr>
                         <td colspan="3" class="text-right"><b>Total</b></td>

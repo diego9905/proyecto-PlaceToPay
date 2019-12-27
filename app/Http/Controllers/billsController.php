@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Bill;
 use App\Client;
+use App\Product;
 use App\State;
 use App\User;
 use Illuminate\Http\Request;
@@ -118,8 +119,12 @@ class billsController extends Controller
 
     public function show($id)
     {
+
+        $products = Product::all();
         $bill = Bill::findOrFail($id);
-        return view('bills.show', compact('bill'));
+        $client = Client::findOrFail($bill->id_clients);
+        $user = User::findOrFAil($bill->id_users);
+        return view('bills.show', compact('bill', 'products', 'client', 'user'));
     }
 
 

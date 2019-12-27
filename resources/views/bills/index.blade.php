@@ -32,7 +32,7 @@
                 <td>{{$loop->iteration}}</td>
                 <td>
                     <a href="{{url('bills/show/' . $bill->id_bills)}}">
-                        {{$bill->customer_name}}
+                        {{$bill->id_bills}}
                     </a>
                 </td>
                 <td>{{$bill->generated_bill}}</td>

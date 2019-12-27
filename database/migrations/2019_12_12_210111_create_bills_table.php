@@ -17,14 +17,10 @@ class CreateBillsTable extends Migration
             'bills',
             function (Blueprint $table) {
                 $table->increments('id_bills');
-                $table->string('customer_name');
-                $table->string('customer_identification_card');
                 $table->date('generated_bill');
                 $table->date('delivered_bill')->nullable();
                 $table->date('overdue_bill')->nullable();
                 $table->string('company_name');
-                $table->string('seller_name');
-                $table->string('seller_nit');
                 $table->string('state');
                 $table->string('detail')->nullable();
                 $table->integer('iva');

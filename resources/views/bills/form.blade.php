@@ -1,93 +1,113 @@
 {{ $Modo=='crear' ? 'Add customer':'Modify customer' }}
 
-<div class="form-group">
+<div class="well well-sm">
+    <div class="row">
+        <label for="id_clients" class="id_clients">{{'Customer Name'}}</label>
+        <select name="id_clients" id="id_clients" class="form-control" required="required">
+            @foreach($clients as $client)
+                <option value="{{  $client['id_clients'] }}">{{ $client['name'] ." ". $client['last_name']." ". $client['identification_card'] }}</option>
 
-    <label for="customer_name" class="control-label">{{'Customer Name'}}</label>
-    <select name="customer_name" id="customer_name" class="form-control" required="required">
-        @foreach($clients as $client)
-            <option value="{{  $client['name'] ." " . $client['last_name'] }}">{{ $client['name'] ." ". $client['last_name'] }}</option>
-            <option value="{{ $client['customer_identification_card'] }}">{{ $client['customer_identification_card'] }}"</option>
-        @endforeach
-    </select>
+            @endforeach
+        </select>
 
+                <label for="id_users" class="id_users">{{'Seller Name'}}</label>
+                <select name="id_users" id="id_users" class="form-control" required="required">
+                    @foreach($users as $user)
+                        <option value="{{  $user['id_users'] }}">{{ $user['name'] ." ". $user['last_name']." ". $user['nit'] }}</option>
 
-<div class="form-group">
+                    @endforeach
+                </select>
+<div class="col-6">
 
-    <label for="generated_bill" class="control-label">{{'Generated Bill'}}</label>
-    <input type="date" class="form-control" name="generated_bill" id="generated_bill"
-           value="{{ old('generated_bill' )}}">
+    <div class="row-cols-lg-2">
 
-</div>
+        <label for="generated_bill" class="control-label">{{'Generated Bill'}}</label>
+        <input type="date" class="form-control" name="generated_bill" id="generated_bill"
+               value="{{ old('generated_bill' )}}">
 
-<div class="form-group">
+    </div>
 
-    <label for="delivered_bill" class="control-label"> {{'Delivered Bill'}}</label>
-    <input type="date" class="form-control" name="delivered_bill" id="delivered_bill"
-           value="{{ old('delivered_bill')}}">
+    <div class="row-cols-lg-2">
 
-</div>
+        <label for="delivered_bill" class="control-label"> {{'Delivered Bill'}}</label>
+        <input type="date" class="form-control" name="delivered_bill" id="delivered_bill"
+               value="{{ old('delivered_bill')}}">
 
-<div class="form-group">
-
-    <label for="overdue_bill" class="control-label"> {{'Overdue Bill'}}</label>
-    <input type="date" class="form-control" name="overdue_bill" id="overdue_bill" value="{{old('overdue_bill')}}">
-
-</div>
-
-<div class="form-group">
-
-    <label for="company_name" class="control-label">{{'Company Name'}}</label>
-    <input type="text" class="form-control" name="company_name" id="company_name"
-           value="{{ old('company_name' )}}">
+    </div>
 
 </div>
 
-<div class="form-group">
+        <div class="col-6">
 
-    <label for="seller_name" class="control-label">{{'Seller Name'}}</label>
-    <input type="text" class="form-control" name="seller_name" id="seller_name"
-           value="{{ old('seller_name' )}}">
+    <div class="row-cols-lg-2">
+
+        <label for="overdue_bill" class="control-label"> {{'Overdue Bill'}}</label>
+        <input type="date" class="form-control" name="overdue_bill" id="overdue_bill" value="{{old('overdue_bill')}}">
+
+    </div>
+
+    <div class="row-cols-lg-2">
+
+        <label for="company_name" class="control-label">{{'Company Name'}}</label>
+        <input type="text" class="form-control" name="company_name" id="company_name"
+               value="{{ old('company_name' )}}">
+
+    </div>
+        </div>
 
 
-<div class="form-group">
+        <div class="col-6">
 
-    <label for="state" class="control-label"> {{'State'}}</label>
-    <select name="state" id="state" class="form-control" required="required">
-        @foreach($states as $state)
-            <option value="{{  $state['name'] }}">{{ $state['name'] }}</option>
-        @endforeach
-    </select>
+    <div class="row-cols-lg-2">
 
+        <label for="state" class="control-label"> {{'State'}}</label>
+        <select name="state" id="state" class="form-control" required="required">
+            @foreach($states as $state)
+                <option value="{{  $state['name'] }}">{{ $state['name'] }}</option>
+            @endforeach
+        </select>
+
+    </div>
+
+    <div class="row-cols-lg-2">
+
+        <label for="detail" class="control-label"> {{'Detail'}}</label>
+        <input type="text" class="form-control" name="detail" id="detail" value="{{old('detail')}}">
+
+    </div>
+        </div>
+
+        <div class="col-6">
+
+    <div class="row-cols-lg-2">
+
+        <label for="iva" class="control-label"> {{'Iva'}}</label>
+        <input type="text" class="form-control" name="iva" id="iva" value="{{old('iva')}}">
+
+    </div>
+
+    <div class="row-cols-lg-2">
+
+        <label for="subtotal" class="control-label"> {{'Subtotal'}}</label>
+        <input type="text" class="form-control" name="subtotal" id="subtotal" value="{{old('subtotal')}}">
+
+    </div>
+
+
+    <div class="row-cols-lg-2">
+
+        <label for="total" class="control-label"> {{'Total'}}</label>
+        <input type="text" class="form-control" name="total" id="total" value="{{old('total')}}">
+
+    </div>
+        </div>
+    </div>
 </div>
 
-<div class="form-group">
+    <input class="btn btn-success" type="submit" value="Add">
 
-    <label for="detail" class="control-label"> {{'Detail'}}</label>
-    <input type="text" class="form-control" name="detail" id="detail" value="{{old('detail')}}">
+    <a class="btn btn-primary" href="{{ url('bills') }}">Return</a>
 
-</div>
-
-<div class="form-group">
-
-    <label for="iva" class="control-label"> {{'Iva'}}</label>
-    <input type="text" class="form-control" name="iva" id="iva" value="{{old('iva')}}">
-
-</div>
-
-<div class="form-group">
-
-    <label for="subtotal" class="control-label"> {{'Subtotal'}}</label>
-    <input type="text" class="form-control" name="subtotal" id="subtotal" value="{{old('subtotal')}}">
-
-</div>
-
-<div class="form-group">
-
-    <label for="total" class="control-label"> {{'Total'}}</label>
-    <input type="text" class="form-control" name="total" id="total" value="{{old('total')}}">
-
-</div>
-
-<input class="btn btn-success" type="submit" value="Add">
-
-<a class="btn btn-primary" href="{{ url('bills') }}">Return</a>
+    @section('scripts')
+        <script src="public/js/admin/bills/create.js"></script>
+@endsection

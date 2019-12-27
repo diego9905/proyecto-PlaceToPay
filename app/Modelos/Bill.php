@@ -11,14 +11,10 @@ class Bill extends Model
 
     protected $fillable = [
         "id_bills",
-        "customer_name",
-        "customer_identification_card",
         "generated_bill",
         "delivered_bill",
         "overdue_bill",
         "company_name",
-        "seller_name",
-        "seller_nit",
         "state",
         "detail",
         "total",
@@ -33,7 +29,7 @@ class Bill extends Model
 
     public function clients()
     {
-        return $this->hasMany('App\Modelos\Client', "id_clients");
+        return $this->hasMany(Client::class, "id_clients");
     }
 
     public function bills_products()
