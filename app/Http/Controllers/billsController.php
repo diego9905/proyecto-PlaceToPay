@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Bill;
+use App\BillProduct;
 use App\Client;
 use App\Product;
 use App\Seller;
@@ -130,8 +131,10 @@ class billsController extends Controller
 
     public function addproducts($id)
     {
+
         $bill = Bill::find($id);
-        return view('bills.addproducts', compact('bill'));
+        $products = Product::all();
+        return view('bills.addproducts', compact('bill', 'products'));
     }
 
 

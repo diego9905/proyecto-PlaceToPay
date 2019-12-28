@@ -7,7 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class BillProduct extends Model
 {
     protected $table = "bills_products";
-    protected $fillable = ["id_products_bills", "unit_value"];
+    protected $primaryKey = "id_products_bills";
+
+    protected $fillable = ["id_products_bills", "product_quantity", "total_products_value"];
 
     public function bills()
     {
