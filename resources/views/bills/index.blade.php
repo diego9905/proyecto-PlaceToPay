@@ -41,9 +41,8 @@
                 <td>{{$bill->total}}</td>
                 <td>
 
-
+                    <a class="btn btn-dark" href="{{ url('/bills/'.$bill->id_bills.'/addproducts') }}">Add Products</a>
                     <a class="btn btn-warning" href="{{ url('/bills/'.$bill->id_bills.'/edit') }}">Edit</a>
-
                     <form method="post" action="{{ url('/bills/'.$bill->id_bills) }}" style="display:inline">
                         {{csrf_field() }}
                         {{method_field('DELETE')}}

@@ -5,8 +5,8 @@ namespace App\Http\Controllers;
 use App\Bill;
 use App\Client;
 use App\Product;
+use App\Seller;
 use App\State;
-use App\User;
 use Illuminate\Http\Request;
 
 
@@ -111,11 +111,12 @@ class billsController extends Controller
 
     public function create()
     {
-        $users = User::all();
+        $sellers = Seller::all();
         $clients = Client::all();
         $states = State::all();
-        return view('bills.create', compact('states', 'users'), compact('clients'));
+        return view('bills.create', compact('states', 'sellers'), compact('clients'));
     }
+
 
     public function show($id)
     {
@@ -123,9 +124,16 @@ class billsController extends Controller
         $products = Product::all();
         $bill = Bill::findOrFail($id);
         $client = Client::findOrFail($bill->id_clients);
-        $user = User::findOrFAil($bill->id_users);
-        return view('bills.show', compact('bill', 'products', 'client', 'user'));
+        $seller = Seller::findOrFAil($bill->id_sellers);
+        return view('bills.show', compact('bill', 'products', 'client', 'seller'));
     }
+
+    public function addproducts($id)
+    {
+        $bill = Bill::find($id);
+        return view('bills.addproducts', compact('bill'));
+    }
+
 
 
 

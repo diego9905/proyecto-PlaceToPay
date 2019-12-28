@@ -16,17 +16,15 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
+        'id',
         'name',
-        'last_name',
         'email',
-        'nit',
-        'address',
-        'phone',
-        'city',
+        'password',
+        'confirm_password'
     ];
-    public function administrators()
+    public function sellers()
     {
-        return $this->hasMany('App\Modelos\Administrator', "id_administrators");
+        return $this->belongsTo('App\Modelos\Seller.php', "id");
     }
 
     /**
@@ -35,7 +33,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-
+        'password',
         'remember_token',
     ];
 

@@ -21,7 +21,7 @@
         <tr>
             <th>#</th>
             <th>Description</th>
-            <th>Quantity</th>
+            <th>Reference</th>
             <th>Price</th>
             <th>Actions</th>
         </tr>
@@ -31,7 +31,7 @@
             <tr>
                 <td>{{$loop->iteration}}</td>
                 <td>{{$product->description}}</td>
-                <td>{{$product->quantity}}</td>
+                <td>{{$product->reference}}</td>
                 <td>{{$product->price}}</td>
                 <td>
 

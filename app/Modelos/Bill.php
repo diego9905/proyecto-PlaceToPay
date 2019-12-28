@@ -22,9 +22,9 @@ class Bill extends Model
         "subtotal"
     ];
 
-    public function users()
+    public function sellers()
     {
-        return $this->hasMany('App\User.php', "id");
+        return $this->hasMany('App\Seller.php', "id_sellers");
     }
 
     public function clients()

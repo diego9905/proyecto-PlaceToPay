@@ -412,7 +412,6 @@ class ComposerStaticInitdd97c5b22f6da22ea490cfc526825bd5
     );
 
     public static $classMap = array (
-        'App\\Administrator' => __DIR__ . '/../..' . '/app/Modelos/Administrator.php',
         'App\\Bill' => __DIR__ . '/../..' . '/app/Modelos/Bill.php',
         'App\\BillProduct' => __DIR__ . '/../..' . '/app/Modelos/BillProduct.php',
         'App\\City' => __DIR__ . '/../..' . '/app/Modelos/City.php',
@@ -431,7 +430,7 @@ class ComposerStaticInitdd97c5b22f6da22ea490cfc526825bd5
         'App\\Http\\Controllers\\billsController' => __DIR__ . '/../..' . '/app/Http/Controllers/billsController.php',
         'App\\Http\\Controllers\\clientsController' => __DIR__ . '/../..' . '/app/Http/Controllers/clientsController.php',
         'App\\Http\\Controllers\\productsController' => __DIR__ . '/../..' . '/app/Http/Controllers/productsController.php',
-        'App\\Http\\Controllers\\usersController' => __DIR__ . '/../..' . '/app/Http/Controllers/usersController.php',
+        'App\\Http\\Controllers\\sellersController' => __DIR__ . '/../..' . '/app/Http/Controllers/sellersController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\CheckForMaintenanceMode' => __DIR__ . '/../..' . '/app/Http/Middleware/CheckForMaintenanceMode.php',
@@ -446,6 +445,7 @@ class ComposerStaticInitdd97c5b22f6da22ea490cfc526825bd5
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
+        'App\\Seller' => __DIR__ . '/../..' . '/app/Modelos/Seller.php',
         'App\\State' => __DIR__ . '/../..' . '/app/Modelos/State.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
         'Carbon\\Carbon' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Carbon.php',

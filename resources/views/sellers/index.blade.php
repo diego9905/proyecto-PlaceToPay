@@ -11,7 +11,7 @@
 
     </br>
 
-    <a href="{{ url('users/create') }}" class="btn btn-success">Add user</a>
+    <a href="{{ url('sellers/create') }}" class="btn btn-success">Add Seller</a>
 
 
     <table class="table table-light table-light">
@@ -29,20 +29,20 @@
         </tr>
         </thead>
         <tbody>
-        @foreach($users as $user)
+        @foreach($sellers as $seller)
             <tr>
                 <td>{{$loop->iteration}}</td>
-                <td>{{$user->name}} {{$user->last_name}}</td>
-                <td>{{$user->nit}}</td>
-                <td>{{$user->address}}</td>
-                <td>{{$user->email}}</td>
-                <td>{{$user->phone}}</td>
-                <td>{{$user->city}}</td>
+                <td>{{$seller->first_name}} {{$seller->last_name}}</td>
+                <td>{{$seller->nit}}</td>
+                <td>{{$seller->address}}</td>
+                <td>{{$seller->email}}</td>
+                <td>{{$seller->phone}}</td>
+                <td>{{$seller->city}}</td>
                 <td>
 
-                    <a class="btn btn-warning" href="{{ url('/users/'.$user->id.'/edit') }}">Edit</a>
+                    <a class="btn btn-warning" href="{{ url('/sellers/'.$seller->id_sellers.'/edit') }}">Edit</a>
 
-                    <form method="post" action="{{ url('/users/'.$user->id) }}" style="display:inline">
+                    <form method="post" action="{{ url('/sellers/'.$seller->id_sellers) }}" style="display:inline">
                         {{csrf_field() }}
                         {{method_field('DELETE')}}
                         <button class="btn btn-danger" type="submit" onclick="return confirm('delete?');">delete

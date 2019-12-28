@@ -2,8 +2,8 @@
 
 <div class="form-group">
 
-    <label for="name" class="control-label">{{'First Name'}}</label>
-    <input type="text" class="form-control" name="name" id="name" value="{{ old('name') }}">
+    <label for="first_name" class="control-label">{{'First Name'}}</label>
+    <input type="text" class="form-control" name="first_name" id="first_name" value="{{ old('first_name') }}">
 
 </div>
 
@@ -52,5 +52,5 @@
 
 <input class="btn btn-success" type="submit" value="Add">
 
-<a class="btn btn-primary" href="{{ url('users') }}">Return</a>
+<a class="btn btn-primary" href="{{ url('sellers') }}">Return</a>
 

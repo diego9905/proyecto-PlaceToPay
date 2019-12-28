@@ -40,13 +40,18 @@ Route::get('bills/show/{id}', 'billsController@show')->name('bills');
 
 Auth::routes();
 
-Route::resource('users', 'usersController');
+Route::resource('sellers', 'sellersController');
 
 Auth::routes();
 
 Route::resource('products', 'productsController');
 
 Auth::routes();
+
+Route::get('/bills/{id}/addproducts', 'billsController@addproducts');
+
+
+
 
 
 

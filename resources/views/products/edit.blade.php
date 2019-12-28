@@ -16,9 +16,9 @@
 
             <div class="form-group">
 
-                <label for="quantity" class="control-label">{{'Quantity'}}</label>
-                <input type="text" class="form-control" name="quantity" id="quantity"
-                       value="{{ $product->quantity }}">
+                <label for="reference" class="control-label">{{'Reference'}}</label>
+                <input type="text" class="form-control" name="reference" id="reference"
+                       value="{{ $product->reference }}">
 
             </div>
 

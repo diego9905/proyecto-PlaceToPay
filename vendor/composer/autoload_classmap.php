@@ -6,7 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'App\\Administrator' => $baseDir . '/app/Modelos/Administrator.php',
     'App\\Bill' => $baseDir . '/app/Modelos/Bill.php',
     'App\\BillProduct' => $baseDir . '/app/Modelos/BillProduct.php',
     'App\\City' => $baseDir . '/app/Modelos/City.php',
@@ -25,7 +24,7 @@ return array(
     'App\\Http\\Controllers\\billsController' => $baseDir . '/app/Http/Controllers/billsController.php',
     'App\\Http\\Controllers\\clientsController' => $baseDir . '/app/Http/Controllers/clientsController.php',
     'App\\Http\\Controllers\\productsController' => $baseDir . '/app/Http/Controllers/productsController.php',
-    'App\\Http\\Controllers\\usersController' => $baseDir . '/app/Http/Controllers/usersController.php',
+    'App\\Http\\Controllers\\sellersController' => $baseDir . '/app/Http/Controllers/sellersController.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
     'App\\Http\\Middleware\\Authenticate' => $baseDir . '/app/Http/Middleware/Authenticate.php',
     'App\\Http\\Middleware\\CheckForMaintenanceMode' => $baseDir . '/app/Http/Middleware/CheckForMaintenanceMode.php',
@@ -40,6 +39,7 @@ return array(
     'App\\Providers\\BroadcastServiceProvider' => $baseDir . '/app/Providers/BroadcastServiceProvider.php',
     'App\\Providers\\EventServiceProvider' => $baseDir . '/app/Providers/EventServiceProvider.php',
     'App\\Providers\\RouteServiceProvider' => $baseDir . '/app/Providers/RouteServiceProvider.php',
+    'App\\Seller' => $baseDir . '/app/Modelos/Seller.php',
     'App\\State' => $baseDir . '/app/Modelos/State.php',
     'App\\User' => $baseDir . '/app/User.php',
     'Carbon\\Carbon' => $vendorDir . '/nesbot/carbon/src/Carbon/Carbon.php',

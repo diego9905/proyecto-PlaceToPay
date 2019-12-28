@@ -17,7 +17,7 @@ class CreateProductsTable extends Migration
             'products',
             function (Blueprint $table) {
                 $table->increments('id_products');
-                $table->integer('quantity');
+                $table->integer('reference')->nullable();
                 $table->integer('price');
                 $table->string('description');
                 $table->timestamps();

@@ -28,10 +28,11 @@ class CreateBillsTable extends Migration
                 $table->integer('total');
                 $table->integer('id_clients')->unsigned()->nullable();
                 $table->integer('id_states')->unsigned()->nullable();
+                $table->integer('id_sellers')->unsigned()->nullable();
 
                 $table->foreign('id_clients')->references('id_clients')->on('clients');
                 $table->foreign('id_states')->references('id_states')->on('states');
-
+                $table->foreign('id_sellers')->references('id_sellers')->on('sellers');
 
                 $table->timestamps();
 

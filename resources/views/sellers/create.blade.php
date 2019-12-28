@@ -14,10 +14,10 @@
         @endif
 
 
-        <form action="{{('/users')}}" class="form-horizontal" method="post" enctype="multipart/form-data">
+        <form action="{{('/sellers')}}" class="form-horizontal" method="post" enctype="multipart/form-data">
             {{csrf_field()}}
 
-            @include('users.form',['Modo'=>'crear'])
+            @include('sellers.form',['Modo'=>'crear'])
 
 
         </form>

@@ -9,6 +9,11 @@
 
                 </h2>
 
+                <h3 class="page-header">
+                    COMPANY NAME: {{ str_pad ($bill->company_name, 4, '0', STR_PAD_LEFT) }}
+
+                </h3>
+
                 <div class="well well-sm">
                     <div class="row">
                         <div class="col-3">
@@ -21,19 +26,25 @@
 
                             <label for="seller_name" class="control-label">{{'Seller Name:'}}</label>
                             <div class="col-xs-2">
-                                <input class="form-control" type="text" readonly value={{ $user->name }} />
+                                <input class="form-control" type="text" readonly
+
+                                value="{{ $seller->first_name." ".$seller->last_name}}"/>
+
                             </div>
                         </div>
                         <div class="col-3">
                             <label for="customer_identification_card" class="control-label">{{'Customer ID:'}}</label>
                             <div class="col-xs-2">
                                 <input class="form-control" type="text" readonly
+
                                        value={{ $client->identification_card }} />
                             </div>
 
                             <label for="seller_nit" class="control-label">{{'Seller Nit:'}}</label>
                             <div class="col-xs-4">
-                                <input class="form-control" type="text" readonly value={{ $bill->seller_nit }} />
+                                <input class="form-control" type="text" readonly
+
+                                       value={{ $client->identification_card }} />
                             </div>
                         </div>
                         <div class="col-3">
@@ -74,7 +85,7 @@
                         <th>Product</th>
 
                         <th>Description</th>
-                        <th style="width:100px;">Quantity</th>
+                        <th style="width:100px;">Reference</th>
                         <th style="width:100px;">Price</th>
 
                     </tr>
@@ -85,7 +96,7 @@
                             <td>{{$loop->iteration}}</td>
 
                             <td class="text-body">{{$product->description}}</td>
-                            <td class="text-body">{{$product->quantity}}</td>
+                            <td class="text-body">{{$product->reference}}</td>
                             <td class="text-body">$ {{number_format($product->price, 2)}}</td>
                         </tr>
                     @endforeach

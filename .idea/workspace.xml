@@ -2,20 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="978a5a79-3044-4627-83e5-b9310213c0e4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/js/admin/bills/create.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/bills/addproducts.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/ConfirmPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ConfirmPasswordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/ForgotPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ForgotPasswordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/billsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/billsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/usersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/sellersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modelos/Administrator.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Modelos/Bill.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modelos/Bill.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modelos/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modelos/Product.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/mail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2013_12_23_165200_create_administrators_table.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_12_210111_create_bills_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_12_210111_create_bills_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/bills/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bills/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/bills/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bills/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_12_212030_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_12_212030_create_products_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_12_223334_add_foreign_key_bills_users.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/bills/addproducts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bills/addproducts.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/bills/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bills/form.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/bills/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bills/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/bills/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bills/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/products/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/products/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/products/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/users/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sellers/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/users/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sellers/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/users/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sellers/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/users/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sellers/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,17 +182,17 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/Modelos" />
-      <recent name="$PROJECT_DIR$/app" />
-      <recent name="$PROJECT_DIR$/app/modelos" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/views/products" />
       <recent name="$PROJECT_DIR$/resources/views/administrators" />
       <recent name="$PROJECT_DIR$/resources/views/bills" />
       <recent name="$PROJECT_DIR$/app/Modelos" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Modelos" />
+      <recent name="$PROJECT_DIR$/app" />
+      <recent name="$PROJECT_DIR$/app/modelos" />
     </key>
   </component>
   <component name="RunManager">
@@ -234,7 +257,8 @@
       <workItem from="1577068691408" duration="16723000" />
       <workItem from="1577133895074" duration="12703000" />
       <workItem from="1577154912326" duration="32000" />
-      <workItem from="1577158526805" duration="31021000" />
+      <workItem from="1577158526805" duration="44362000" />
+      <workItem from="1577505791160" duration="4302000" />
     </task>
     <servers />
   </component>
@@ -255,10 +279,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="350" y="27" width="713" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1577136205145">
+    <state x="350" y="27" width="713" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1577476022202">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="350" y="27" width="713" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/67.27.1299.741@67.27.1299.741" timestamp="1577136205145" />
+    <state x="350" y="27" width="713" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/67.27.1299.741@67.27.1299.741" timestamp="1577476022202" />
     <state x="449" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1577143212932">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -271,17 +295,17 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="205" y="33" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1577111880798" />
-    <state x="372" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1577158526954">
+    <state x="372" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1577505813008">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="372" y="225" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1577158526954" />
-    <state x="380" y="175" key="run.anything.popup" timestamp="1577200254526">
+    <state x="372" y="225" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1577505813008" />
+    <state x="380" y="175" key="run.anything.popup" timestamp="1577477310415">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="380" y="175" key="run.anything.popup/67.27.1299.741@67.27.1299.741" timestamp="1577200254526" />
-    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1577419778865">
+    <state x="380" y="175" key="run.anything.popup/67.27.1299.741@67.27.1299.741" timestamp="1577477310415" />
+    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1577551819209">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1577419778865" />
+    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1577551819209" />
   </component>
 </project>
