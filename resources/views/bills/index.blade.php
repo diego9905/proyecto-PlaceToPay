@@ -11,11 +11,22 @@
     @endif
     <nav class="navbar navbar-light float-lg-right">
         <form class="form-inline">
-            <input name="company_name" class="form-control mr-sm-2" type="company_name" placeholder="company name"
-                   aria-label="company_name">
+            <select name="type" class="form-control" id="exampleFormControlSelect1">
+                <option>category</option>
+                <option>company_name</option>
+                <option>generated_bill</option>
+                <option>overdue_bill</option>
+                <option>state</option>
+                <option>total</option>
+            </select>
+            <input name="searchbytype" class="form-control mr-sm-2" type="searchbytype" placeholder="Search by type"
+                   aria-label="searchbytype">
+
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
     </nav>
+
+
 
     <a href="{{ url('bills/create') }}" class="btn btn-success">Add bill</a>
 
@@ -25,7 +36,7 @@
         <thead class=thead class="thead-light">
         <tr>
             <th>Bill Number</th>
-            <th>Customer Name</th>
+            <th>Company Name</th>
             <th>Generated Bill</th>
             <th>Overdue Bill</th>
             <th>State</th>

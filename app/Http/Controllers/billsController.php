@@ -22,9 +22,10 @@ class billsController extends Controller
 
     public function index(Request $request)
     {
-        $search = $request->get('company_name');
+        $search = $request->get('searchbytype');
+        $type = $request->get('type');
 
-        $datos['bills'] = Bill::where('company_name','like',"%$search%")->paginate(5);
+        $datos['bills'] = Bill::searchbytype($type, $search)->paginate(5);
 
         return view('bills.index', $datos);
     }
