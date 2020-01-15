@@ -9,15 +9,18 @@
             {{Session::get('Message')}}
         </div>
     @endif
-    <h4 class="page-header" >
+    <h4 class="page-header">
 
         Export data
 
         <p>
-            click <a href="{{ route('bills.pdf') }}">
-                aqui
-            </a>
+            click <a href="{{ route('bills.pdf') }}">aqui</a>
             para descargar en PDF las facturas
+        </p>
+
+        <p>
+            click <a href="{{ route('bills.excel') }}">aqui</a>
+            para descargar en Excel las facturas
         </p>
 
     </h4>

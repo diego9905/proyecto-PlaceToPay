@@ -15,6 +15,7 @@ Route::get('/', function () {
 });
 
 Route::get('bills-list-pdf','billsController@exportpdf')->name('bills.pdf');
+Route::get('bills-list-excel','billsController@exportExcel')->name('bills.excel');
 
 Auth::routes();
 

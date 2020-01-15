@@ -13,7 +13,7 @@
                     COMPANY NAME: {{ str_pad ($bill->company_name, 4, '0', STR_PAD_LEFT) }}
 
                 </h3>
-                
+
                 <div class="well well-sm">
                     <div class="row">
                         <div class="col-3">

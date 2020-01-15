@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Barryvdh\DomPDF\Facade as PDF;
+use Maatwebsite\Excel\Facades\Excel;
+use App\Exports\BillsExport;
 use App\Bill;
 use App\BillProduct;
 use App\Client;
@@ -188,5 +190,9 @@ class billsController extends Controller
         return $pdf->download('bills-list.pdf');
     }
 
+    public function exportExcel()
+    {
+        return Excel::download(new BillsExport, 'bills-list.xlsx');
+    }
 
 }
