@@ -52,7 +52,9 @@
         @endforeach
         </tbody>
     </table>
-    </div>
+
+    {{ $sellers->links() }}
+
 @endsection
 
 

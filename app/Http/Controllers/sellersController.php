@@ -30,7 +30,7 @@ class sellersController extends Controller
 
     public function index()
     {
-        $datos['sellers'] = Seller::paginate(5);
+        $datos['sellers'] = Seller::paginate(10);
 
         return view('sellers.index', $datos);
     }

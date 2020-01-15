@@ -35,7 +35,7 @@
 
         <thead class=thead class="thead-light">
         <tr>
-            <th>Bill Number</th>
+            <th>#</th>
             <th>Company Name</th>
             <th>Generated Bill</th>
             <th>Overdue Bill</th>
@@ -73,5 +73,7 @@
         @endforeach
         </tbody>
     </table>
+
+    {{ $bills->links() }}
 
 @endsection

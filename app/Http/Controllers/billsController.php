@@ -24,8 +24,9 @@ class billsController extends Controller
     {
         $search = $request->get('searchbytype');
         $type = $request->get('type');
+        $variablesurl=$request->all();
 
-        $datos['bills'] = Bill::searchbytype($type, $search)->paginate(5);
+        $datos['bills'] = Bill::searchbytype($type, $search)->paginate(10)->appends($variablesurl);
 
         return view('bills.index', $datos);
     }
