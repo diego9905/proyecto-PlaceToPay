@@ -47,5 +47,11 @@ class Bill extends Model
         return $this->belongsToMany(Product::class)->withPivot(['unit_price', 'product_quantity', 'total_products_value']);
     }
 
+    public function scopeSearchbytype($query, $type, $search) {
+        if( ($type) && ($search) ) {
+            return $query->where($type,'like',"%$search%");
+        }
+    }
+
     //
 }

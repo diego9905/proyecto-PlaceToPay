@@ -4,12 +4,11 @@
 
     <br class="container">
 
-        @if(Session::has('Message')){{
-    Session::get('Message')
-}}
-        @endif
-
-    </br>
+    @if(Session::has('Message'))
+        <div class="alert alert-success" role="alert">
+            {{Session::get('Message')}}
+        </div>
+    @endif
 
     <a href="{{ url('sellers/create') }}" class="btn btn-success">Add Seller</a>
 
