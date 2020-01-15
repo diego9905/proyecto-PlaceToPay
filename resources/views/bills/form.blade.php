@@ -4,7 +4,8 @@
             <label for="id_clients" class="id_clients">{{'Customer Name'}}</label>
             <select name="id_clients" id="id_clients" class="form-control" required="required">
                 @foreach($clients as $client)
-                    <option value="{{  $client['id_clients'] }}">{{ $client['name'] ." ". $client['last_name']." - ID: ". $client['identification_card'] }}</option>
+                    <option
+                        value="{{  $client['id_clients'] }}">{{ $client['name'] ." ". $client['last_name']." - ID: ". $client['identification_card'] }}</option>
 
                 @endforeach
             </select>
@@ -12,7 +13,8 @@
             <label for="id_sellers" class="id_sellers">{{'Seller Name'}}</label>
             <select name="id_sellers" id="id_sellers" class="form-control" required="required">
                 @foreach($sellers as $seller)
-                    <option value="{{  $seller['id_sellers'] }}">{{ $seller['name'] ." ". $seller['last_name']." - NIT: ". $seller['nit'] }}</option>
+                    <option
+                        value="{{  $seller['id_sellers'] }}">{{ $seller['name'] ." ". $seller['last_name']." - NIT: ". $seller['nit'] }}</option>
 
                 @endforeach
             </select>

@@ -7,10 +7,10 @@
             <form action="{{ url('bills') }}/{{ $bill->id_bills }}" method="POST">
                 {{ csrf_field() }}
                 {{ method_field('PUT') }}
-            <div class="form-group col-4">
-                <input type="hidden" readonly="readonly" class="form-control hidden" id="id_bills" name="id_bills"
-                       placeholder="0" value="{{ $bill->id_bills }}">
-            </div>
+                <div class="form-group col-4">
+                    <input type="hidden" readonly="readonly" class="form-control hidden" id="id_bills" name="id_bills"
+                           placeholder="0" value="{{ $bill->id_bills }}">
+                </div>
                 <div class="row">
                     <div class="col-5">
                         <label for="id_products" class="id_products">{{'Product '}}</label>

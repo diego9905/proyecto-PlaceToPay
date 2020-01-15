@@ -22,7 +22,7 @@
 
 </div>
 
-<input class="btn btn-success" type="submit" value="Add" >
+<input class="btn btn-success" type="submit" value="Add">
 
 <a class="btn btn-primary" href="{{ url('products') }}">Return</a>
 

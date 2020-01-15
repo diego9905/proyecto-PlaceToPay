@@ -8,7 +8,10 @@ class State extends Model
 {
     protected $primaryKey = "id_states";
     protected $table = "states";
-    protected $fillable = ["id_states", "name"];
+    protected $fillable = [
+        "id_states",
+        "name"
+    ];
 
     public function bills()
     {

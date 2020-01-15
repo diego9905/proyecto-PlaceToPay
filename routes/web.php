@@ -14,14 +14,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('bills-list-pdf','billsController@exportpdf')->name('bills.pdf');
-Route::get('bills-list-excel','billsController@exportExcel')->name('bills.excel');
-Route::post('import-list-excel','billsController@importExcel')->name('bills.import.excel');
+Route::get('bills-list-pdf', 'billsController@exportpdf')->name('bills.pdf');
+Route::get('bills-list-excel', 'billsController@exportExcel')->name('bills.excel');
+Route::post('import-list-excel', 'billsController@importExcel')->name('bills.import.excel');
 
 Auth::routes();
-
-//Route::get('/clients', 'clientsController@index');
-//Route::get('/clients/create', 'clientsController@create');
 
 
 Route::get('/home', 'HomeController@index')->name('home');

@@ -28,7 +28,7 @@
                             <div class="col-xs-2">
                                 <input class="form-control" type="text" readonly
 
-                                value="{{ $seller->first_name." ".$seller->last_name}}"/>
+                                       value="{{ $seller->first_name." ".$seller->last_name}}"/>
 
                             </div>
                         </div>

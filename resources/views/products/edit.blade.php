@@ -10,7 +10,8 @@
             <div class="form-group">
 
                 <label for="description" class="control-label">{{'Description'}}</label>
-                <input type="text" class="form-control" name="description" id="description" value="{{ $product->description }}">
+                <input type="text" class="form-control" name="description" id="description"
+                       value="{{ $product->description }}">
 
             </div>
 
@@ -29,9 +30,9 @@
                        value="{{ $product->price }}">
 
 
-            <input class="btn btn-success" type="submit" value="Modify">
+                <input class="btn btn-success" type="submit" value="Modify">
 
-            <a class="btn btn-primary" href="{{ url('products') }}">Return</a>
+                <a class="btn btn-primary" href="{{ url('products') }}">Return</a>
 
 
         </form>
