@@ -14,6 +14,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('bills-list-pdf','billsController@exportpdf')->name('bills.pdf');
+
 Auth::routes();
 
 //Route::get('/clients', 'clientsController@index');

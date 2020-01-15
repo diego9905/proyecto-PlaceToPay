@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Barryvdh\DomPDF\Facade as PDF;
 use App\Bill;
 use App\BillProduct;
 use App\Client;
@@ -178,6 +179,13 @@ class billsController extends Controller
         $bill->save();
 
         return redirect('bills');
+    }
+
+    public function exportpdf(){
+
+        $bills = Bill::get();
+        $pdf = PDF::loadView('pdf.create', compact('bills'));
+        return $pdf->download('bills-list.pdf');
     }
 
 

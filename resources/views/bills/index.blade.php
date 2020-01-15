@@ -9,6 +9,18 @@
             {{Session::get('Message')}}
         </div>
     @endif
+    <h4 class="page-header" >
+
+        Export data
+
+        <p>
+            click <a href="{{ route('bills.pdf') }}">
+                aqui
+            </a>
+            para descargar en PDF las facturas
+        </p>
+
+    </h4>
     <nav class="navbar navbar-light float-lg-right">
         <form class="form-inline">
             <select name="type" class="form-control" id="exampleFormControlSelect1">
