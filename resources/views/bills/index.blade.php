@@ -9,16 +9,30 @@
             {{Session::get('Message')}}
         </div>
     @endif
-    <h4 class="page-header" >
+    <h4 class="page-header">
 
         Export data
 
         <p>
-            click <a href="{{ route('bills.pdf') }}">
-                aqui
-            </a>
+            click <a href="{{ route('bills.pdf') }}">aqui</a>
             para descargar en PDF las facturas
         </p>
+
+        <p>
+            click <a href="{{ route('bills.excel') }}">aqui</a>
+            para descargar en Excel las facturas
+        </p>
+        <form action="{{ route('bills.import.excel') }}" method="post" enctype="multipart/form-data">
+            @csrf
+
+            @if(Session::has('message'))
+                <p>{{ Session::get('message') }}</p>
+            @endif
+
+            <input type="file" name="file">
+
+            <button>Importar Usuarios</button>
+        </form>
 
     </h4>
     <nav class="navbar navbar-light float-lg-right">
