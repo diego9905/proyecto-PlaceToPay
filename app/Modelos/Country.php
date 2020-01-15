@@ -7,7 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 class Country extends Model
 {
     protected $table = "countries";
-    protected $fillable = ["id_countries", "name"];
+    protected $fillable = [
+        "id_countries",
+        "name"
+    ];
 
     public function clients()
     {

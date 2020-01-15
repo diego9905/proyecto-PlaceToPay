@@ -9,18 +9,18 @@
             {{Session::get('Message')}}
         </div>
     @endif
-    <h4 class="page-header">
+    <h4 class="font-weight-normal">
 
-        Export data
 
         <p>
-            click <a href="{{ route('bills.pdf') }}">aqui</a>
-            para descargar en PDF las facturas
+            click <a href="{{ route('bills.pdf') }}">here</a>
+
+            download the bills in PDF
         </p>
 
         <p>
-            click <a href="{{ route('bills.excel') }}">aqui</a>
-            para descargar en Excel las facturas
+            click <a href="{{ route('bills.excel') }}">here</a>
+            download the bills in Excel
         </p>
         <form action="{{ route('bills.import.excel') }}" method="post" enctype="multipart/form-data">
             @csrf
@@ -31,7 +31,7 @@
 
             <input type="file" name="file">
 
-            <button>Importar Usuarios</button>
+            <button>Import Bills</button>
         </form>
 
     </h4>

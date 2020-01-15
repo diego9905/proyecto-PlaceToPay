@@ -10,7 +10,8 @@
             <div class="form-group">
 
                 <label for="first_name" class="control-label">{{'First Name'}}</label>
-                <input type="text" class="form-control" name="first_name" id="first_name" value="{{ $seller->first_name }}">
+                <input type="text" class="form-control" name="first_name" id="first_name"
+                       value="{{ $seller->first_name }}">
 
             </div>
 

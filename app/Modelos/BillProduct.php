@@ -9,7 +9,12 @@ class BillProduct extends Model
     protected $table = "bills_products";
     protected $primaryKey = "id_products_bills";
 
-    protected $fillable = ["id_products_bills", "unit_price", "product_quantity", "total_products_value"];
+    protected $fillable = [
+        "id_products_bills",
+        "unit_price",
+        "product_quantity",
+        "total_products_value"
+    ];
 
     public function bills()
     {

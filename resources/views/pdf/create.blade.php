@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,7 +38,8 @@
             <td>{{ $bill->detail }}</td>
             <td>{{ $bill->iva }}</td>
             <td>{{ $bill->subtotal }}</td>
-            <td>{{ $bill->total }}</td>total
+            <td>{{ $bill->total }}</td>
+            total
         </tr>
     @endforeach
     </tbody>
