@@ -30,7 +30,7 @@ class productsController extends Controller
 
     public function index()
     {
-        $datos['products'] = Product::paginate(5);
+        $datos['products'] = Product::paginate(10);
 
         return view('products.index', $datos);
     }
